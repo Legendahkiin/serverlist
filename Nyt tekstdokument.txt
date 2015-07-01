@@ -1,6 +1,0 @@
-I was bored, and decided to work on an addon yesterday that adds a menu (opened with a chat command / console command) with all of our servers,
-where you'll be able to join the servers by pressing a button. It's a simple addon, and some guy on DR recommended one, but that one cost money, and 
-considering it's easy to make it, I decided to go ahead and try my luck. I have only tested this client-side, so I can't say whether it works on servers or not.
-Otherwise you could just make clients download the lua file which has the menu etc.
-
-Link to the addon is here
