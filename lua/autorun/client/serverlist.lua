@@ -19,16 +19,20 @@ RPButton:SetTextColor(Color(255, 255, 255 ))
 RPButton:SetPos(ScrW() * 0.0325, ScrH() * 0.03)
 RPButton:SetSize(100, 30)
 RPButton.Paint = function(self, w, h)
-	draw.RoundedBox(0, 0, 0, w, h, Color(41, 128, 185, 250)) 
+	draw.RoundedBox(0, 0, 0, w, h, Color(41, 128, 185, 250))
 end
 RPButton.DoClick = function()
 	LocalPlayer():ConCommand("connect 108.61.198.226:27030")
 end
 
-local RPAdress = vgui.Create("DLabel", Frame)
-RPAdress:SetText("108.61.198.226:27030")
-RPAdress:SetPos(ScrW() * 0.0305, ScrH() * 0.06)
-RPAdress:SizeToContents()
+local RPA = vgui.Create("DLabel", Frame)
+RPA:SetText("108.61.198.226:27030")
+RPA:SetPos(ScrW() * 0.0305, ScrH() * 0.06)
+RPA:SizeToContents()
+RPA:SetMouseInputEnabled(true)
+function RPA:DoClick()
+	SetClipboardText("108.61.198.226:27030")
+end
 
 // Deathrun configurations
 
@@ -44,10 +48,15 @@ DRButton.DoClick = function()
 	LocalPlayer():ConCommand("connect 108.61.198.226:27015")
 end
 
-local DRAdress = vgui.Create("DLabel", Frame)
-DRAdress:SetText("108.61.198.226:27015")
-DRAdress:SetPos(ScrW() * 0.0305, ScrH() * 0.13)
-DRAdress:SizeToContents()
+local DRA = vgui.Create("DLabel", Frame)
+DRA:SetText("108.61.198.226:27015")
+DRA:SetPos(ScrW() * 0.0305, ScrH() * 0.13)
+DRA:SizeToContents()
+DRA:SetMouseInputEnabled(true)
+function DRA:DoClick()
+	SetClipboardText("108.61.198.226:27015")
+end
+
 
 // Prophunt configurations
 
@@ -63,10 +72,14 @@ PHButton.DoClick = function()
 	LocalPlayer():ConCommand("connect 108.61.198.226:27035")
 end
 
-local PHAdress = vgui.Create("DLabel", Frame)
-PHAdress:SetText("108.61.198.226:27035")
-PHAdress:SetPos(ScrW() * 0.0305, ScrH() * 0.2)
-PHAdress:SizeToContents()
+local PHA = vgui.Create("DLabel", Frame)
+PHA:SetText("108.61.198.226:27035")
+PHA:SetPos(ScrW() * 0.0305, ScrH() * 0.2)
+PHA:SizeToContents()
+PHA:SetMouseInputEnabled(true)
+function PHA:DoClick()
+	SetClipboardText("108.61.198.226:27035")
+end
 
 // TTT configurations
 
@@ -82,10 +95,15 @@ TTTButton.DoClick = function()
 	LocalPlayer():ConCommand("connect 108.61.198.226:27017")
 end
 
-local TTTAdress = vgui.Create("DLabel", Frame)
-TTTAdress:SetText("108.61.198.226:27017")
-TTTAdress:SetPos(ScrW() * 0.0305, ScrH() * 0.27)
-TTTAdress:SizeToContents()
+local TTTA = vgui.Create("DLabel", Frame)
+TTTA:SetText("108.61.198.226:27017")
+TTTA:SetPos(ScrW() * 0.0305, ScrH() * 0.27)
+TTTA:SizeToContents()
+TTTA:SetMouseInputEnabled(true)
+function TTTA:DoClick()
+	SetClipboardText("108.61.198.226:27017")
+end
+
 
 // Murder configurations
 
@@ -101,8 +119,12 @@ MButton.DoClick = function()
 	LocalPlayer():ConCommand("connect 108.61.198.226:27019")
 end
 
-local MAdress = vgui.Create("DLabel", Frame)
-MAdress:SetText("108.61.198.226:27019")
-MAdress:SetPos(ScrW() * 0.0305, ScrH() * 0.34)
-MAdress:SizeToContents()
+local MA = vgui.Create("DLabel", Frame)
+MA:SetText("108.61.198.226:27019")
+MA:SetPos(ScrW() * 0.0305, ScrH() * 0.34)
+MA:SizeToContents()
+MA:SetMouseInputEnabled(true)
+function MA:DoClick()
+	SetClipboardText("108.61.198.226:27019")
+end
 end)
