@@ -11,6 +11,8 @@ concommand.Add("serverlist", function(ply)
 		Frame.Paint = function(self, w, h)
 			draw.RoundedBox(0, 0, 0, w, h, Color(231, 76, 60, 150))
 		end
+		Frame.btnMaxim:Hide()
+		Frame.btnMinim:Hide()
 
 // Dark RP configurations
 
