@@ -1,6 +1,5 @@
 function ISaid( ply, text, public )
-    string.lower(text)
-    if (string.sub(text, 1) == "/servers") then
+    string.lower(text) == "/servers" then
         RunConsoleCommand("serverlist");
         return "";
     end
